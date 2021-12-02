@@ -16,8 +16,7 @@ void main()
 
 	char bufr[128];
 	read(0, bufr, 128);
-
-	printf("bufr 0  %d buf 1 %c ;\n",bufr[0],bufr[1]);
+ 	read(1, bufr, 128);
 	switch(bufr[1]){
 
     case '+':result=CALC_NUM(bufr[0])+CALC_NUM(bufr[2]);
