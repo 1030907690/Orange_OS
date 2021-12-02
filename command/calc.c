@@ -17,7 +17,7 @@ void main()
 	char bufr[128];
 	read(0, bufr, 128);
 
-	printf("bufr 0  %d buf 1 %s ;\n",CALC_NUM(bufr[0]),CALC_NUM(bufr[1]));
+	printf("bufr 0  %d buf 1 %s ;\n",bufr[0],bufr[1]);
 	switch(bufr[1])
 
 	{
