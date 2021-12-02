@@ -17,12 +17,12 @@ void main()
 	char bufr[128];
 	read(0, bufr, 128);
 
-
+	printf("bufr 0  %d",bufr[0]);
 	switch(bufr[1])
 
 	{
 
-    	case '+':result=CALC_NUM(bufr[0])+CALC_NUM(bufr[2]);break;
+    case '+':result=CALC_NUM(bufr[0])+CALC_NUM(bufr[2]);break;
 
 	case '-':result=CALC_NUM(bufr[0])-CALC_NUM(bufr[2]);break;
 
