@@ -1,6 +1,6 @@
 /***************************calculator*********************************/
 #include<stdio.h>
-#define CALC_NUM(x) (x >= 0 ? x : -x)
+#define CALC_NUM(x) (x - 0)
 void main()
 
 {
