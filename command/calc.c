@@ -18,18 +18,22 @@ void main()
 	read(0, bufr, 128);
 
 	printf("bufr 0  %d buf 1 %c ;\n",bufr[0],bufr[1]);
-	switch(bufr[1])
+	switch(bufr[1]){
 
-	{
+    case '+':result=CALC_NUM(bufr[0])+CALC_NUM(bufr[2]);
+	printf("jia fa \n");
+	break;
+	case '-':result=CALC_NUM(bufr[0])-CALC_NUM(bufr[2]);
+	printf("jian fa \n");
+	break;
 
-    case '+':result=CALC_NUM(bufr[0])+CALC_NUM(bufr[2]);break;
+	case '*':result=CALC_NUM(bufr[0])*CALC_NUM(bufr[2]);
+	printf("cheng fa \n");
+	break;
 
-	case '-':result=CALC_NUM(bufr[0])-CALC_NUM(bufr[2]);break;
-
-	case '*':result=CALC_NUM(bufr[0])*CALC_NUM(bufr[2]);break;
-
-	case '/':result=CALC_NUM(bufr[0])/CALC_NUM(bufr[2]);break;
-	
+	case '/':result=CALC_NUM(bufr[0])/CALC_NUM(bufr[2]);
+	printf("chu fa \n");
+	break;
 
 	}
 	if(bufr[0]=='e')
