@@ -1,5 +1,6 @@
 /***************************calculator*********************************/
 #include<stdio.h>
+#define chartonumber(x) (x-'0')
 void main()
 
 {
