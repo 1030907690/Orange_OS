@@ -1,6 +1,6 @@
 /***************************calculator*********************************/
 #include<stdio.h>
-#define chartonumber(x) (x-'0')
+#define CALC_NUM(x) (x-'0')
 void main()
 
 {
@@ -22,20 +22,20 @@ void main()
 
 	{
 
-    	case '+':result=chartonumber(bufr[0])+chartonumber(bufr[2]);break;
+    	case '+':result=CALC_NUM(bufr[0])+CALC_NUM(bufr[2]);break;
 
-	case '-':result=chartonumber(bufr[0])-chartonumber(bufr[2]);break;
+	case '-':result=CALC_NUM(bufr[0])-CALC_NUM(bufr[2]);break;
 
-	case '*':result=chartonumber(bufr[0])*chartonumber(bufr[2]);break;
+	case '*':result=CALC_NUM(bufr[0])*CALC_NUM(bufr[2]);break;
 
-	case '/':result=chartonumber(bufr[0])/chartonumber(bufr[2]);break;
+	case '/':result=CALC_NUM(bufr[0])/CALC_NUM(bufr[2]);break;
 	
 
 	}
 	if(bufr[0]=='e')
 		break;
 	else
-		printf("%d %c %d = %d\n",chartonumber(bufr[0]),bufr[1],chartonumber(bufr[2]),result);
+		printf("%d %c %d = %d\n",CALC_NUM(bufr[0]),bufr[1],CALC_NUM(bufr[2]),result);
 	}
 
 }
