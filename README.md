@@ -1,3 +1,12 @@
+## 1030907690  2021年12月2日17:04:54更新
+### 直接运行外部的make-all.sh脚本，编译全部
+### 然后 bochs -f bochsrc 运行
+### 问题
+#### physical memory read error   问题
+- sudo apt-get install bochs
+- sudo apt-get install bochs-x
+
+
 # Orange操作系统设计和功能说明文档
 ## Orange操作系统设计说明
 ### 开发目标

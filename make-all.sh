@@ -7,4 +7,3 @@ cd command
 make all
 make install
 echo 'done ...'
-bochs -f bochsrc
