@@ -5,6 +5,8 @@
 #### physical memory read error   问题
 - sudo apt-get install bochs
 - sudo apt-get install bochs-x
+#### 没有 /mnt/floppy/目录
+- mkdir /mnt/floppy/
 
 
 # Orange操作系统设计和功能说明文档
